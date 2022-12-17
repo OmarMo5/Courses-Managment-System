@@ -1,0 +1,221 @@
+body{overflow-x:hidden;}
+.navbar2{
+    background-color: rgb(79, 116, 155);
+    width: 100%;padding: 10px;color: white;
+}
+.navbar2 .container{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar2 .container .Left {display: flex;margin-right: 150px;padding-bottom: 5px;}
+.navbar2 .container .Left h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-transform: capitalize;
+}
+.navbar2 .container .Left img{
+    width: 60px;height: 60px;margin-right: 30px;margin-top: 10px;
+    cursor: pointer;
+}
+.navbar2 .container .Right{padding-top: 20px;}
+.navbar2 .container .Right tr td a{
+    text-decoration: none;
+    margin-left: 40px;font-weight: bolder;
+    font-size: 18px;color: white;
+}
+
+.bd{
+    background-color: rgb(223, 223, 223);padding: 15px;
+    /* background-image: url("../images/BG.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 800px;
+    margin: 35px 0; */
+}
+.bd #bdleft h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;font-weight: bolder;
+}
+.bd #bdleft p{color: gray;text-align: justify;margin-top: 45px;}
+.bd #bdleft .media{margin-top: 50px;margin-bottom: 35px;}
+.bd #bdleft .media input{
+    border:1px solid rgb(223, 223, 223);margin-right:0 ;
+} 
+.bd #bdright img{
+    width: 800px;height: 500px;
+}
+.bd .inside button{
+    text-decoration: none;margin-left: 60px;font-weight: bolder;
+    font-size: 18px;color: black;padding: 10px;
+    border: 2px solid #ddd;border-radius: 15px;
+}
+.bd .inside button:hover{background-color: #777;} 
+/*courses content */
+.courses-content {
+background-image: url("../images/se2.jpg");
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+height: 400px;
+margin: 35px 0;
+}
+.courses-content .overlay {
+background-color: rgba(0, 0, 0, 0.3);
+}
+.course-item {
+margin-top: 100px;
+border: 2px solid white;
+width: 150px;
+height: 100px;
+padding: 10px;
+transition: all 0.8s;
+}
+.course-item > img {
+width: 95%;
+height: 80px;
+text-align: center;
+margin: auto;
+}
+.course-item > h2 {
+color: white;
+font-size: 20px;
+text-align: center;
+margin-top: 30px;
+}
+.courses-items {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.course-item:hover {
+border-radius: 20%;
+background-color: white;
+}
+.courses-content, .section-title{
+    text-align: center;font-size: 40px;font-style: italic;margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* about us */
+.about-con {
+overflow: hidden;
+margin: 40px 0;
+}
+
+.about-item {
+width: 30%;
+float: left;
+border: 1px solid;
+border: 1px solid black;
+text-align: center;
+}
+
+.about-item.mg {
+margin: 0 5%;
+}
+.about-item .icon {
+background-color: #ddd;
+border-radius: 50%;
+margin-bottom: 10px;
+margin-top: 10px;
+color: black;
+width: 100px;
+height: 100px;
+line-height: 100px;
+transition: background-image 0.8s;
+}
+
+.about-item-title {
+margin: 5px 0;
+color: #333;
+transition: color 0.8s;
+text-transform: capitalize;
+margin-bottom: 10px;
+}
+
+.about-item-desc {
+color: #777;
+margin-bottom: 10px;
+line-height: 1.5;
+transition: color 0.8s;
+text-transform: capitalize;
+}
+
+.about-item-btn {
+border-radius: 10%;
+background-color: #66d2cf;
+color: #fff;
+width: 200px;
+font-size: 30px;
+margin-top: 15px;
+list-style-type: none;
+margin: 30px auto;
+cursor: pointer;
+transition: border-radius 0.8s;
+}
+
+.about-item .icon:hover {
+background-image: linear-gradient(to bottom right, red, yellow);
+color: white;
+}
+
+.about-item:hover .about-item-title {
+color: white;
+}
+
+.about-item:hover .about-item-desc {
+color: #6f79ba;
+}
+
+.about-item-btn:hover {
+border-radius: 50%;
+}
+.ttb-effect {
+position: relative;
+}
+
+.ttb-effect:after {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: black;
+content: "";
+z-index: -1;
+}
+
+.ttb-effect:after {
+height: 0;
+transition: height 0.8s;
+}
+
+.ttb-effect:hover:after {
+height: 100%;
+}
+
+.say{margin-top:30px;margin-bottom:80px;}
+.say .ro1 .h1{font-weight:bolder;font-style:italic;text-align:center;}
+.say .ro2{margin-left:1%;margin-top:2%;}
+.say .ro2 img{width:70px;height:70px;margin-left:45%;}
+.say .ro2 p{color:gray;text-align:center;}
+.say .ro2 .h1{text-align:center;}
+
+.footer{
+    padding-top:50px;padding-bottom:30px;background-color:#2c243c;
+}
+.footer div p a{
+    text-decoration: none;color: #bbb;font-weight: bold;
+    line-height: 20px;
+}
+.footer div h2{margin-bottom:20px;color:white;}
+.footer div img{
+    width: 30px;height: 30px;margin-left:35px;border-radius: 15px;cursor: pointer;
+}
+.footer div img:hover{background-color: #333;border-radius: 0;}
+.footer .cen{
+	display:flex;margin-top:30px;border-top:2px solid white;
+	padding-top:5px;font-size:18px;
+}
+.footer .cen img{width:30px;height:30px;margin-top:5px;}
+.footer .cen span{color:white;margin-top:8px;margin-left:15px;text-transform:capitalize;}
+.footer .cen #copy{margin:auto;}
