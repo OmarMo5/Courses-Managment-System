@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/StyleSignIn.css"/>
+    <script src="js/jquery-3.4.1.min"></script>
+    <script src="js/logInJs.js"></script>
+</head>
+<body>
+    
+      <!-- start with navbar -->
+      <section class="navbar2">
+        <div class="container">
+            <div class="Left">
+                <img src="images/learning.JPEG" alt="Show Text Instead Of Img" class="img-responsive img-circle"/>
+                <h3>manage Courses</h3>
+            </div>
+            <div class="Right">
+                <table>
+                    <tr>
+                        <td><a  href="Home.html">Home</a></td>
+                        <td><a  href="#con">Contact</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+            <!-- end with navbar -->
+
+    <section class="LogIn">
+        <h1>LogIn</h1>
+        <div class="container">
+
+            <form name="myLog" method="POST" id="chek">
+                    
+                <label>User Name</label>
+                <input type="text" placeholder="Enter username" name="username" id="user" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" name="password" id="pass" required>
+                
+                <button type="submit" class="btn btn-primary" class="sign" onclick="CustomerLogIn()">Sign-In Instructor</button>
+                <button type="submit" class="btn btn-primary" class="sign" onclick="InstructLogIn()">Sign-In Admin</button>
+
+                <div class="signUp">
+                    <p>Already have an account? <a href="SignUp.html" >Sign Up</a>.</p>
+                </div>
+
+            </form>
+            
+        </div>
+    </section>
+           
+    
+    <!-- Start Footer -->
+    <section class="footer" id="con">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <h2>Product</h2>
+                    <p><a href="#">Feature</a></p>
+                    <p><a href="#">Pricing</a></p>
+                    <p><a href="#">Requset a Demo</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Solutions</h2>
+                    <p><a href="#">Attract Candidates</a></p>
+                    <p><a href="#">Reduce HR Admin</a></p>
+                    <p><a href="#">Make Better Hires</a></p>
+                    <p><a href="#">Reduce Hr Spend</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Support</h2>
+                    <p><a href="#">Live Chat</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Help Guides</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Resourse</h2>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Hiring Expert</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Never Miss an Update!</h2>
+                    <img src="images/face.JPEG" class="img-circle"/>
+                    <img src="images/meta.JPEG" class="img-circle"/>
+                    <img src="images/link.JPEG" class="img-circle"/>
+                    <img src="images/upw.JPEG" class="img-circle"/>
+                </div>
+                <div class="col-md-12 cen">
+                    <img src="images/learning.JPEG" alt="Show Text Instead Of Img" class="img-responsive img-circle"/>
+                    <span>manage Courses</span>
+                    <span id="copy">&copy; 2022 Studend Courses</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+            <!-- End Footer -->
+
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/logInJs.js" defer></script>
+</html>

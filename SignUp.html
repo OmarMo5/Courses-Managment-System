@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/styleSignUp.css"/>
+    <script src="js/jquery-3.4.1.min"></script>
+</head>
+<body>
+    
+      <!-- start with navbar -->
+    <section class="navbar2">
+        <div class="container">
+            <div class="Left">
+                <img src="images/learning.JPEG" alt="Show Text Instead Of Img" class="img-responsive img-circle"/>
+                <h3>manage Courses</h3>
+            </div>
+            <div class="Right">
+                <table>
+                    <tr>
+                        <td><a  href="Home.html">Home</a></td>
+                        <td><a  href="#con">Contact</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+            <!-- end with navbar -->
+
+
+    <form name="reg" method="post">
+        <div class="container">
+            <h1>Register</h1>
+            <hr>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+            <label for="username"><b>username</b></label>
+            <input type="text" placeholder="Enter username" name="username" id="username" required>
+        
+            <button type="submit" class="registerbtn" onclick="check()">Register</button>
+        </div>
+        <div class="container signin">
+            <p>Already have an account? <a href="SignIn.html">Sign in</a>.</p>
+        </div>
+    </form>
+            
+
+    
+    <!-- Start Footer -->
+    <section class="footer" id="con">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <h2>Product</h2>
+                    <p><a href="#">Feature</a></p>
+                    <p><a href="#">Pricing</a></p>
+                    <p><a href="#">Requset a Demo</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Solutions</h2>
+                    <p><a href="#">Attract Candidates</a></p>
+                    <p><a href="#">Reduce HR Admin</a></p>
+                    <p><a href="#">Make Better Hires</a></p>
+                    <p><a href="#">Reduce Hr Spend</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Support</h2>
+                    <p><a href="#">Live Chat</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Help Guides</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Resourse</h2>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Hiring Expert</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Never Miss an Update!</h2>
+                    <img src="images/face.JPEG" class="img-circle"/>
+                    <img src="images/meta.JPEG" class="img-circle"/>
+                    <img src="images/link.JPEG" class="img-circle"/>
+                    <img src="images/upw.JPEG" class="img-circle"/>
+                </div>
+                <div class="col-md-12 cen">
+                    <img src="images/learning.JPEG" alt="Show Text Instead Of Img" class="img-responsive img-circle"/>
+                    <span>manage Courses</span>
+                    <span id="copy">&copy; 2022 Studend Courses</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+            <!-- End Footer -->
+
+</body>
+<script>
+    function check(){
+        let mail = document.forms["reg"]["email"].value;
+        let pass = document.forms["reg"]["psw"].value;
+        let user = document.forms["reg"]["username"].value;
+        if(mail!="" && pass!="" && user!=""){
+            alert("Registration SuccessFully...!");
+        }
+        else{
+            alert("Invalid Data")
+        }
+    }
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+</html>

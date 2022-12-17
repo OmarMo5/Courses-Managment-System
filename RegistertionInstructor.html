@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Instructor</title>
+    <style></style>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styleRegistrationInstr.css"/>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    
+    <form method="post" name="myFormReg">
+        <div class="container">
+            <h1>Register Instructor</h1>
+            <hr>
+        
+            <label for="name"><b>Enter organization name</b></label>
+            <input type="text" placeholder="Enter name" name="name" id="name" required>
+        
+            <label for="mail"><b> Enter organization e-mail</b></label>
+            <input type="email" placeholder="Enter e-mail" name="mail" id="mail" required>
+        
+            <label for="username"><b>Enter user name</b></label>
+            <input type="text" placeholder="Enter username" name="username" id="username" required>
+            
+            <label for="Password"><b>Enter Password</b></label>
+            <input type="password" placeholder="Enter Password" name="Password" id="Password" required>
+        
+            <button class="registerbtn" onclick="checkReg()">Register</button>
+        </div>
+        <div class="container signin">
+            <p>Already have an account? <a href="SignIn.html">Sign in</a>.</p>
+        </div>
+    </form>
+
+</body>
+<script>
+    function checkReg(){
+        let orgName = document.forms["myFormReg"]["name"].value;
+        let orgMail = document.forms["myFormReg"]["mail"].value;
+        let orgUserName = document.forms["myFormReg"]["username"].value;
+        let orgPassword = document.forms["myFormReg"]["Password"].value;
+        if(orgName!="" && orgMail!="" && orgUserName!="" && orgPassword!=""){
+            alert("Registration Successfully...!");
+            document.forms["myFormReg"]["name"].value="";
+            document.forms["myFormReg"]["mail"].value="";
+            document.forms["myFormReg"]["username"].value="";
+            document.forms["myFormReg"]["Password"].value="";
+        }
+    }
+</script>
+</html>

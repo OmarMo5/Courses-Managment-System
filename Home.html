@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Management System</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/StyleHome.css"/>
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/jquery-3.4.1.min"></script>
+</head>
+<body>
+    
+    <!-- start with navbar -->
+    <section class="navbar2">
+        <div class="container">
+            <div class="Left">
+                <img src="images/learning.JPEG" alt="Show Text Instead Of Img" class="img-responsive img-circle"/>
+                <h3>manage Courses</h3>
+            </div>
+            <div class="Right">
+                <table>
+                    <tr>
+                        <td><a  href="">Home</a></td>
+                        <td><a  href="#c4">About US</a></td>
+                        <td><a  href="#c3">Courses</a></td>
+                        <td><a  href="#">Task</a></td>
+                        <td><a  href="#con">Contact</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+            <!-- end with navbar -->
+        
+            <!-- start with body -->
+    <section class="bd">
+        <div class="container">	
+            <div class="row">
+            
+                <div id="bdleft" class="col-md-5">
+                    <h1>Home insureance That Protects You</h1>
+                    <p>
+                        Are You Wordering Why healths Thsta amms,, is akjka,,annht  MMSMD
+                        Are You Wordering Why healths Thsta amms, How Are You.
+                    </p>
+                    <div class="media">
+                        <div class="pull-left">
+                            <input type="search" placeholder="Enter Your Address..." class="form-control input-lg" />
+                        </div>
+                        <div class="media-body">
+                            <button class="btn btn-primary btn-lg media-heading">Get Insured</button>
+                        </div>
+                    </div>
+
+                    <div class="inside">
+                      <button onclick="showPromptToNotUser()">LogIn</button>
+                      <button onclick="showPromptToAdmin()">SignUp</button>
+                    </div>
+                    
+                </div>
+                <div id="bdright" class="col-md-7">
+                    <img src="images/say1.JPEG" class="img-thumbnail"/>
+                </div>
+
+            </div>
+        </div>
+    </section>
+            <!-- end with body -->
+
+
+<!--Courses-->
+<section class="courses pd-y" id="c3">
+    <div class="section-header pd-y">
+      <div class="section-title">Some <span>Courses</span></div>
+      <span class="line"></span>
+    </div>
+    <!--\section-header-->
+    <div class="courses-content">
+      <div class="overlay">
+        <div class="container">
+          <div class="courses-items">
+            <div class="course-item">
+              <img src="images/AI.png" alt="AI" />
+              <h2 class="course-title">AI</h2>
+            </div>
+            <!--/AI-->
+            <div class="course-item">
+              <img src="images/IT.png" alt="IT" />
+              <h2 class="course-title">IT</h2>
+            </div>
+            <!--/IT-->
+            <div class="course-item">
+              <img src="images/math.png" alt="Math" />
+              <h2 class="course-title">Math</h2>
+            </div>
+            <!--/Math-->
+            <div class="course-item">
+              <img src="images/cs.png" alt="CS" />
+              <h2 class="course-title">CS</h2>
+            </div>
+            <!--/CS-->
+            <div class="course-item">
+              <img src="images/java.png" alt="JAVA" />
+              <h2 class="course-title">JAVA</h2>
+            </div>
+            <!--/JAVA-->
+            <div class="course-item">
+              <img src="images/html.png" alt="HTML" />
+              <h2 class="course-title">HTML</h2>
+            </div>
+            <!--/html-->
+          </div>
+          <!--/courses-items-->
+        </div>
+        <!--/container-->
+      </div>
+      <!--/overlay-->
+    </div>
+    <!--/courses-content-->
+  </section>
+  <!--/courses-->
+
+  <!--AboutUs-->
+  <section class="about pd-y" id="c4">
+    <!-- section header -->
+    <div class="section-header">
+      <h2 class="section-title">about <span>us</span></h2>
+      <span class="line"></span>
+    </div>
+    <div class="about-body pd-y">
+      <div class="container">
+        <div class="about-con">
+          <!-- education -->
+          <div class="about-item ttb-effect">
+            <i class="icon fa fa-graduation-cap fa-3x"></i>
+            <h2 class="about-item-title">Awesome Education</h2>
+            <p class="about-item-desc">our courses is more efficient</p>
+            <li class="about-item-btn"><a>hover!</a></li>
+          </div>
+          <!-- /about-item -->
+          <!-- classes -->
+          <div class="about-item ttb-effect mg">
+            <i class="icon fa fa-home fa-3x"></i>
+            <h2 class="about-item-title">Awesome Classes</h2>
+            <p class="about-item-desc">our courses is more interactive</p>
+            <li class="about-item-btn"><a>hover!</a></li>
+          </div>
+          <!-- /about-item -->
+          <!-- teaching -->
+          <div class="about-item ttb-effect">
+            <i class="icon fa fa-leaf fa-3x"></i>
+            <h2 class="about-item-title">Awesome Teaching</h2>
+            <p class="about-item-desc">
+              our courses is distincit with its quality
+            </p>
+            <li class="about-item-btn"><a>hover!</a></li>
+          </div>
+          <!-- /about-item -->
+        </div>
+        <!-- /about-con -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /about-body -->
+  </section>
+  <!--/AboutUS-->
+
+
+            <!-- Start our Say -->
+    <section class="say">
+        <div class="container">
+            
+            <div class="row ro1">
+                <div class="col-md-12">
+                    <h2 class="h1">
+                        The Technology Skills Palatform
+                    </div>
+                </div>
+            </div>
+            <div class="row ro2">
+                <div class="col-md-3">
+                    <h2 class="h1">Pluralsight IQ</h2>
+                    <img src="images/face.JPEG" class="img-circle img-thumbnail"/>
+                    <p>Validate Skill Levels With assessment that take 5 minutes or less</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="h1">Channels</h2>
+                    <img src="images/meta.JPEG" class="img-circle img-thumbnail"/>
+                    <p>Curate And Pluralsight Content to reach Your Learning Goal Faster</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="h1">Hand-On Learning</h2>
+                    <img src="images/link.JPEG" class="img-circle img-thumbnail"/>
+                    <p>Practice And apply Knowledge faster in real world</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="h1">100 Of Courses</h2>
+                    <img src="images/say1.JPEG" class="img-circle img-thumbnail"/>
+                    <p>Keep up with the pace with expert-led in-depth courses</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+			<!-- End our Say -->
+
+            <!-- Start Footer -->
+    <section class="footer" id="con">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <h2>Product</h2>
+                    <p><a href="#">Feature</a></p>
+                    <p><a href="#">Pricing</a></p>
+                    <p><a href="#">Requset a Demo</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Solutions</h2>
+                    <p><a href="#">Attract Candidates</a></p>
+                    <p><a href="#">Reduce HR Admin</a></p>
+                    <p><a href="#">Make Better Hires</a></p>
+                    <p><a href="#">Reduce Hr Spend</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Support</h2>
+                    <p><a href="#">Live Chat</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Help Guides</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Resourse</h2>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Hiring Expert</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Never Miss an Update!</h2>
+                    <img src="images/face.JPEG" class="img-circle"/>
+                    <img src="images/meta.JPEG" class="img-circle"/>
+                    <img src="images/link.JPEG" class="img-circle"/>
+                    <img src="images/upw.JPEG" class="img-circle"/>
+                </div>
+                <div class="col-md-12 cen">
+                    <img src="images/learning.JPEG" alt="Show Text Instead Of Img" class="img-responsive img-circle"/>
+                    <span>manage Courses</span>
+                    <span id="copy">&copy; 2022 Studend Courses</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+            <!-- End Footer -->
+
+</body>
+  <script>
+    function showPromptToNotUser(){
+      let enter = prompt("To LogIn:-\nEnter Instructor Or Admin");
+      if(enter!="" && enter!=null){
+        window.location.href="SignIn.html";
+      }
+      else{
+        window.location.href="Home.html";
+      }
+    }
+    function showPromptToAdmin(){
+      let enter = prompt("To Registration:-\nEnter Customer Or Instructor");
+      if(enter=="customer" && enter!=null){
+        window.location.href="SignUp.html";
+      }
+      else if(enter=="instructor" && enter!=null){
+        window.location.href = "RegistertionInstructor.html";
+      }
+      else{
+        window.location.href="Home.html";
+      }
+    }
+  </script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+</html>
