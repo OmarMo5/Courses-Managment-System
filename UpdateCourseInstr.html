@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Update</title>
+    <style></style>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/UpdateCourseInstr.css"/>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+            <!-- update Courses-->
+    <form class="AddCourse instrUpdate" id="addCou" name="myForm" method="post">
+        <div class="container">
+            <h1>Update Course</h1>
+            <hr/>
+            <label for="hour"><b>Course Hour</b></label>
+            <input type="time" placeholder="Enter Course Hour" name="hour" id="hour" required>
+        
+            <label for="Price"><b>Course Price</b></label>
+            <input type="number" placeholder="Enter Course Price" name="price" id="price" required>
+
+            <p class="lead">Course Material</p>
+            <table>
+                <tr>
+                    <td><label>Upload Lesson</label></td>
+                    <td><label>Upload Question Form</label></td>
+                    <td><label>Time of Quiz</label></td>
+                </tr>
+                <tr>
+                    <td><input type="file" name="less" id="less" required></td>
+                    <td><input type="file" name="ques" id="ques" required></td>
+                    <td><input type="number" name="qiuz" id="qiuz" required></td>
+                </tr>
+            </table>
+                                
+            <input type="submit" value="Add" id="addMerge" class="btn btn-primary"/>
+        </div>
+    </form>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+</html>

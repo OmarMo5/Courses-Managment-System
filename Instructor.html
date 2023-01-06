@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Task</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/StyleInstr.css"/>
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/InstructorJs.js"></script>
+    <script src="js/jquery-3.4.1.min"></script>
+</head>
+<body>
+    
+    <!-- start with navbar -->
+    <section class="navbar2">
+        <div class="container">
+            <div class="Left">
+                <img src="images/learning.JPEG" alt="Show Text Instead Of Img" class="img-responsive img-circle"/>
+                <h3>manage Courses</h3>
+            </div>
+            <div class="Right">
+                <table>
+                    <tr>
+                        <td><a  href="">Home</a></td>
+                        <td><a  href="">About Us</a></td>
+                        <td><a  href="#instru">Task</a></td>
+                        <td><a  href="#con">Contact</a></td>
+                        <td><a  href="Home.html">LogOut</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="who">
+            <h3 class="h1">Eduication Is A Life</h3>
+            <p class="lead">
+                Develop Your Skill Through Us Through A Variety Of Courses In Some Important Fields
+            </p>
+            <img src="images/instructor.jpg" class="img-circle img-responsive"/>
+            <p class="lead">Welcome Dr/ <mark>Omar</mark></p>
+        </div>
+
+    </section>
+            <!-- end with navbar -->
+
+    <div class="title container" id="instru">
+        <h1>Instructor Task</h1>
+        <hr>
+    </div>
+
+    <div class="conte">
+        <div class="task">
+            <h2>Create Courses</h2>
+            <button class="btn btn-danger" onclick="CreateCourse()">Do</button>
+        </div>
+        <div class="task1">
+            <h2>Update Courses</h2>
+            <button class="btn btn-danger" onclick="updateCourse()">Do</button>
+        </div>
+        <div class="task2">
+            <h2>Delete Courses</h2>
+            <button class="btn btn-danger" onclick="deleteCourse()">Do</button>
+        </div>
+        <div class="task3">
+            <h2>Take attendance</h2>
+            <button class="btn btn-danger" onclick="takeAttendance()">Do</button>
+        </div>
+
+    </div>
+
+            <!--To take Attendance-->
+    <section class="instrCreate" id="take">
+        <div class="container">
+            <form class="AddCourse" id="addCou" name="myForm4" method="post">
+                <div class="container">
+
+                    <label for="num"><b>Course Number</b></label>
+                    <input type="number" placeholder="Enter Course Number" name="num" id="num" required>
+    
+                    <label for="user"><b>User Name</b></label>
+                    <input type="text" placeholder="Enter User Name" name="user" id="user" required>
+                    
+                    <label for="date"><b>The Date</b></label>
+                    <input type="date" placeholder="Enter Date" name="date" id="date" required>
+                                        
+                    <input type="submit" value="Show" id="addMerge" class="btn btn-primary"/>
+                    <button id="takeAtt" class="btn btn-primary" onclick="exit1()">Exit</button>
+    
+                </div>
+            </form>
+        </div>
+    </section>
+
+                <!-- create Courses-->
+    <section class="instrCreate" id="instrCrea">
+        <div class="container">
+            <form class="AddCourse" id="addCou" name="myForm" method="post">
+                <div class="container">
+
+                    <label for="hour"><b>Course Hour</b></label>
+                    <input type="time" placeholder="Enter Course Hour" name="hour" id="hour" required>
+        
+                    <label for="num"><b>Course Number</b></label>
+                    <input type="number" placeholder="Enter Course Number" name="num" id="num" required>
+                    
+                    <label for="name"><b>Course Name</b></label>
+                    <input type="text" placeholder="Enter Course Name" name="name" id="name" required>
+                
+                    <label for="Price"><b>Course Price</b></label>
+                    <input type="number" placeholder="Enter Course Price" name="price" id="price" required>
+
+                    <p class="lead">Course Material</p>
+                    <table class="addMaterial">
+                        <tr>
+                            <td><label class="les">Upload Lesson</label></td>
+                            <td><label class="ques">Upload Question Form</label></td>
+                            <td><label class="time">Time of Quiz</label></td>
+                            <td><span class="plus" onclick="addNewMaterial()">+</span></td>
+                            <td><span class="mins" onclick="delMaterial()">-</span></td>
+                        </tr>
+                        <tr class="re">
+                            <td><input type="file" name="less" id="less" required></td>
+                            <td><input type="file" name="ques" id="ques" required></td>
+                            <td><input type="number" name="qiuz" id="qiuz" required></td>
+                        </tr>
+                    </table>
+                                        
+                    <input type="submit" value="Create" id="addMerge" class="btn btn-primary"/>
+                    <button id="exitcourse" class="btn btn-primary" onclick="exit()">Exit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+        <!--To Update-->
+    <section class="check" id="che">
+        <div class="AddCourse">
+            <p>Check Instructor To Give permission:-</p>
+            <form name="myform1" method="post">
+                <label>Enter Instructor Name</label>
+                <input type="text" name="inst" placeholder="Enter Name"/>
+
+                <input type="button" value="Check" id="addMerge" class="btn btn-primary" onclick="toMakeInstrUpdate()"/>
+                <button id="updateCourse" class="btn btn-primary">Exit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="InstrExiting" id="instrFound1">
+        <div class="exiting">
+            <p>Instructor Is exiting</p>
+            <a href="UpdateCourseInstr.html">Go To Upadet</a>
+            <button class="btn btn-primary" onclick="InstructorExisting()">Exit</button>
+        </div>
+    </section>
+
+        <!--To Delete-->
+    <section class="check1" id="che1">
+        <div class="AddCourse">
+            <p>Check Instructor To Give permission:-</p>
+            <form name="myform2" method="post">
+                <label>Enter Instructor Name</label>
+                <input type="text" name="inst" placeholder="Enter Name"/>
+
+                <input type="button" value="Check" id="addMerge" class="btn btn-primary" onclick="toMakeInstrDelete()"/>
+                <button id="delCourse" class="btn btn-primary">Exit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="InstrExiting1" id="instrFound2">
+        <div class="exiting">
+            <p>Instructor Is exiting</p>
+            <a href="#" onclick="showDeleCoursInstr()">Go To Delete</a>
+            <button class="btn btn-primary" onclick="InstructorExisting1()">Exit</button>
+        </div>
+    </section>
+
+    <section class="deleCoursInstr" id="showToDel">
+        <div class="AddCourse">
+            <form name="myform5" method="post">
+                <label>Enter Course Number</label>
+                <input type="number" name="num" placeholder="Enter Number"/>
+
+                <input type="button" value="Delete" class="btn btn-primary" onclick=""/>
+                <button id="delCourse1" class="btn btn-primary">Exit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Start Footer -->
+    <section class="footer" id="con">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <h2>Product</h2>
+                    <p><a href="#">Feature</a></p>
+                    <p><a href="#">Pricing</a></p>
+                    <p><a href="#">Requset a Demo</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Solutions</h2>
+                    <p><a href="#">Attract Candidates</a></p>
+                    <p><a href="#">Reduce HR Admin</a></p>
+                    <p><a href="#">Make Better Hires</a></p>
+                    <p><a href="#">Reduce Hr Spend</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Support</h2>
+                    <p><a href="#">Live Chat</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Help Guides</a></p>
+                </div>
+                <div class="col-md-2">
+                    <h2>Resourse</h2>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Hiring Expert</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Never Miss an Update!</h2>
+                    <img src="images/face.JPEG" class="img-circle"/>
+                    <img src="images/meta.JPEG" class="img-circle"/>
+                    <img src="images/link.JPEG" class="img-circle"/>
+                    <img src="images/upw.JPEG" class="img-circle"/>
+                </div>
+                <div class="col-md-12 cen">
+                    <img src="images/learning.JPEG" alt="Show Text Instead Of Img" class="img-responsive img-circle"/>
+                    <span>manage Courses</span>
+                    <span id="copy">&copy; 2022 Studend Courses</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+            <!-- End Footer -->
+
+</body>
+    <script src="js/InstructorJs.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>
