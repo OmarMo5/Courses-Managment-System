@@ -1,0 +1,28 @@
+.AddCourse h1{
+    color: #337ab7;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.AddCourse{width:650px;top: 60%;}
+.AddCourse .container {padding: 16px;}
+.AddCourse h1{color: #337ab7;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.AddCourse input[type=text], input[type=number], input[type=time]{
+    width: 50%;padding: 15px;margin: 5px 0 22px 0;
+    display: block;border: none;background: #f1f1f1;
+}
+.AddCourse input[type=text]:focus, input[type=number]:focus, input[type=time]:focus {
+    background-color: #ddd;outline: none;
+}
+.AddCourse input[type=file]{
+    display: block;margin-top: -25px;
+}
+.AddCourse input[type=submit]{
+    width: 120px;
+}
+.AddCourse .lead{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #337ab7;margin-left:20%;font-size: bolder;
+}
+.AddCourse .registerbtn{
+    background-color: #04AA6D;color: white;padding: 8px 15px;border-radius: 7px;
+    margin: 8px 0;border: none;cursor: pointer;width: 10%;opacity: 0.9;
+}
+.AddCourse .registerbtn:hover {opacity: 1;}

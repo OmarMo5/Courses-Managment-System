@@ -1,0 +1,256 @@
+body{overflow-x:hidden ;}
+.navbar2{
+    background-color: rgb(79, 116, 155);margin-bottom: 40px;
+    width: 100%;padding: 10px;color: white;
+}
+.navbar2 .container{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar2 .container .Left {display: flex;margin-right: 150px;padding-bottom: 5px;}
+.navbar2 .container .Left h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-transform: capitalize;
+}
+.navbar2 .container .Left img{
+    width: 60px;height: 60px;margin-right: 30px;margin-top: 10px;
+    cursor: pointer;
+}
+.navbar2 .container .Right{padding-top: 20px;}
+.navbar2 .container .Right tr td a{
+    text-decoration: none;
+    margin-left: 40px;font-weight: bolder;
+    font-size: 18px;color: white;
+}
+.navbar2 .who .h1{text-align: center;color: #2c243c;}
+.navbar2 .who .lead{text-align: center;}
+.navbar2 .who img{margin: auto;width: 80px;}
+.navbar2 .who mark{font-size: 20px;font-weight: bolder;}
+
+
+
+.pd-y {
+padding: 60px 0;
+}
+.section-header {
+text-align: center;
+margin: auto;
+}
+.section-header .section-title {
+font-size: 50px;
+text-transform: capitalize;
+}
+.section-header .line {
+display: block;
+width: 120px;
+height: 5px;
+margin: auto;
+background-color: coral;
+margin-top: 10px;
+}
+.section-title > span {
+color: gray;
+}  
+.tasks-items {
+flex-wrap: wrap;
+}
+.task {
+display: inline-block;
+margin: 10px;
+width: 30%;
+}
+.endTask {
+width: 49%;
+margin: 10px 0;
+}
+.endUpdateTask {
+width: 100%;
+}
+.footer {
+position: relative;
+width: 100%;
+}
+
+#CourseID {
+position: relative;
+margin-bottom: 10px;
+margin-top: 20px;
+left: 30px;
+}
+
+input[type="submit"] {
+transition: all 0.6s;
+}
+input[type="submit"]:hover {
+background-color: #3a273a;
+color: #eee;
+}
+/*start course*/
+.start {
+background-color: #ddd;
+width: 600px;
+padding: 10px;
+display: none;
+position: fixed;
+top: 90%;
+left: 20%;
+border-radius: 15px;
+}
+.start .h1 {
+color: #3a273a;
+text-decoration: underline;
+font-style: italic;
+}
+.start .btn {
+width: 100px;
+}
+
+/*Add Student*/
+#addMerge {
+width: 100px;
+border-radius: 10px;
+border: #fff;
+outline: none;
+color: #eee;
+padding: 5px;
+font-size: larger;
+background-color: rgb(167, 57, 57);
+}
+
+.DeleteStd,
+.DeleteInst,
+.DeleteCourse {
+position: fixed;
+background-color: #ddd;
+z-index: 99999;
+padding: 3px;
+border-radius: 15px;
+display: none;
+}
+.DeleteStd {
+top: 53%;
+left: 22%;
+width: 500px;
+}
+.DeleteInst {
+width: 550px;
+top: 53%;
+left: 30%;
+}
+.DeleteCourse {
+top: 53%;
+left: 60%;
+width: 500px;
+}
+:is(.DeleteStd, .DeleteInst, .DeleteCourse) div {
+margin-bottom: 30px;
+padding: 5px;
+}
+:is(.DeleteStd, .DeleteInst, .DeleteCourse) div label {
+font-size: larger;
+font-style: oblique;
+margin-left: 10px;
+margin-right: 20px;
+}
+:is(.DeleteStd, .DeleteCourse, .updateStud, .updateCourse) div input {
+outline: none;
+border-radius: 10px;
+padding: 10px;
+border: 2px solid #eee;
+font-size: bolder;
+width: 230px;
+}
+:is(.DeleteStd, .DeleteInst, .DeleteCourse) .btns button {
+border-radius: 45px;
+outline: none;
+padding: 10px;
+width: 100px;
+margin-left: 20px;
+}
+
+/*Add Instructor & Delete & Update */
+
+:is(.DeleteInst) div input {
+outline: none;
+border-radius: 10px;
+padding: 10px;
+border: 2px solid #eee;
+font-size: bolder;
+width: 250px;
+}
+/*Tasks*/
+.tasks-items {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.task {
+border: 1px solid gray;
+border-radius: 15px;
+width: 30%;
+padding: 10px;
+text-align: center;
+margin-bottom: 10px;
+}
+.task:nth-child(2) {
+margin: 0 2%;
+}
+.task > li {
+list-style-type: none;
+background-color: white;
+border-radius: 50%;
+width: 80px;
+height: 80px;
+line-height: 100px;
+text-align: center;
+margin: 0 auto;
+transition: all 0.9s;
+}
+.task-title {
+margin: 30px 0 0 0;
+font-size: 30px;
+}
+.task-btn > span,
+.ad {
+background-color: chocolate;
+color: white;
+display: block;
+padding: 10px;
+font-size: 30px;
+margin-top: 40px;
+cursor: pointer;
+transition: all 0.8s;
+}
+.task-btn > span:hover,
+.ad:hover {
+background-color: saddlebrown;
+box-shadow: 0px 15px 20px rgba(253, 196, 62, 0.855);
+color: white;
+transform: translateY(-7px);
+}
+.task > li:hover {
+transform: rotate(360deg);
+background-color: black;
+color: white;
+}  
+
+
+.footer{
+    padding-top:50px;padding-bottom:30px;background-color:#2c243c;
+    margin-top: 100px;
+}
+.footer div p a{
+    text-decoration: none;color: #bbb;font-weight: bold;
+    line-height: 20px;
+}
+.footer div h2{margin-bottom:20px;color:white;}
+.footer div img{
+    width: 30px;height: 30px;margin-left:35px;border-radius: 15px;cursor: pointer;
+}
+.footer div img:hover{background-color: #333;border-radius: 0;}
+.footer .cen{
+	display:flex;margin-top:30px;border-top:2px solid white;
+	padding-top:5px;font-size:18px;
+}
+.footer .cen img{width:30px;height:30px;margin-top:5px;}
+.footer .cen span{color:white;margin-top:8px;margin-left:15px;text-transform:capitalize;}
+.footer .cen #copy{margin:auto;}
