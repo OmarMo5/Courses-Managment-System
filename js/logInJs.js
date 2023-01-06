@@ -26,9 +26,9 @@ let password1= localStorage.getItem("password");
     }
 } */
 
-function CustomerLogIn(){
+function InstructLogIn(){
     window.location.href = "Instructor.html";
 }
-function InstructLogIn(){
-    window.location.href = "Admin.html";
+function CustomerLogIn(){
+    window.location.href = "#";
 }
